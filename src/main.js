@@ -38,7 +38,7 @@ akTrigger.addEventListener('click', () => {
     msg.style.fontSize = "3vw";
     msg.style.lineHeight = "1.6";
     msg.style.color = "white";
-    msg.style.transform = "translateY(-50%) scale(0.9)";
+    msg.style.transform = "translateY(-50%) scale(0.8)";
 
     inkOverlay.classList.add("active");
     inkOverlay.style.pointerEvents = "none";
@@ -167,7 +167,7 @@ document.addEventListener("mousemove", (e) => {
         msg2.style.color = "black";
         msg2.style.fontSize = "3vw";
         msg2.style.lineHeight = "1.6";
-        msg2.style.transform = "translateY(-50%) scale(0.9)";
+        msg2.style.transform = "translateY(-50%) scale(0.8)";
 
         msg.style.opacity = 0;
         return;
