@@ -28,17 +28,23 @@ chars.forEach(char => {
     악 클릭 → 오버레이 활성화
 ----------------------------- */
 akTrigger.addEventListener('click', () => {
+    // compute seon center so message vertically aligns with the '선' glyph
     const rect = seonChar1.getBoundingClientRect();
+    const seonCenterY = rect.top + rect.height / 2;
 
     msg.style.opacity = 1;
     msg.style.zIndex = 99999;
     msg.style.position = "fixed";
-    msg.style.left = rect.right + 50 + "px";
-    msg.style.top = '40%';
-    msg.style.fontSize = "1.4vw";
+    // put the message just to the right of the seon glyph, vertically centered
+    msg.style.left = (rect.right + 40) + "px";
+    msg.style.top = seonCenterY + "px";
+
+    // use viewport-relative font so GitHub deploy and local scale match better
+    msg.style.fontSize = "1.6vw";
     msg.style.lineHeight = "1.6";
     msg.style.color = "white";
-    msg.style.transform = "scale(0.7)";
+    // translateY(-50%) to vertically center at the top value
+    msg.style.transform = "translateY(-50%) scale(0.8)";
 
     inkOverlay.classList.add("active");
     inkOverlay.style.pointerEvents = "none";
@@ -157,17 +163,20 @@ document.addEventListener("mousemove", (e) => {
 
     // 왼쪽으로 드래그하면 → 오른쪽에 msg2
     if (mouseX < vw * 0.3) {
+        const rectSeon = seonChar1.getBoundingClientRect();
+        const seonCenterY = rectSeon.top + rectSeon.height / 2;
+
         msg2.innerHTML =
             "초자연이 개입하는 경우가 아니라면,<br>모든 일은 중력에 따라 일어난다고 예상해야 한다.";
         msg2.style.opacity = 1;
 
         msg2.style.position = "fixed";
-        msg2.style.left = "72%";
-        msg2.style.top = "40%";
+        msg2.style.left = "72%";           // keep at right side
+        msg2.style.top = seonCenterY + "px"; // align vertically with '선'
         msg2.style.color = "black";
-        msg2.style.fontSize = "1.4vw";
+        msg2.style.fontSize = "1.6vw";
         msg2.style.lineHeight = "1.6";
-        msg2.style.transform = "translateY(-50%) scale(0.7)";
+        msg2.style.transform = "translateY(-50%) scale(0.8)";
 
         msg.style.opacity = 0;
         return;
@@ -175,17 +184,20 @@ document.addEventListener("mousemove", (e) => {
 
     // 오른쪽으로 드래그하면 → 왼쪽에 msg
     if (mouseX > vw * 0.3) {
+        const rectSeon = seonChar1.getBoundingClientRect();
+        const seonCenterY = rectSeon.top + rectSeon.height / 2;
+
         msg.innerHTML = "우리가 저급하다고 지칭하는 것은<br>모두 중력의 현상이다.";
         msg.style.opacity = 1;
         msg2.style.opacity = 0;
 
         msg.style.position = "fixed";
-        msg.style.left = "10%";
-        msg.style.top = "40%";
+        msg.style.left = (rectSeon.right + 40) + "px"; // keep it to the right of the '선' glyph
+        msg.style.top = seonCenterY + "px";           // align vertically with '선'
         msg.style.color = "black";
-        msg.style.fontSize = "1.4vw";
+        msg.style.fontSize = "1.6vw";
         msg.style.lineHeight = "1.6";
-        msg.style.transform = "translateY(-50%) scale(0.7)";
+        msg.style.transform = "translateY(-50%) scale(0.8)";
 
         return;
     }
