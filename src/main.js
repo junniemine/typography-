@@ -30,14 +30,14 @@ chars.forEach(char => {
 akTrigger.addEventListener('click', () => {
     // compute seon center so message vertically aligns with the '선' glyph
     const rect = seonChar1.getBoundingClientRect();
-    const seonCenterY = rect.top + rect.height / 1.9;
+    const seonCenterY = rect.top + rect.height / 2;
 
     msg.style.opacity = 1;
     msg.style.zIndex = 99999;
     msg.style.position = "fixed";
     // put the message just to the right of the seon glyph, vertically centered
     msg.style.left = (rect.right + 40) + "px";
-    msg.style.top = seonCenterY + "px";
+    msg.style.top = '42' + "%"
 
     // use viewport-relative font so GitHub deploy and local scale match better
     msg.style.fontSize = "1.6vw";
