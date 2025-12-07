@@ -164,7 +164,7 @@ document.addEventListener("mousemove", (e) => {
         msg2.style.left = "70%";
         msg2.style.top = "40%";
         msg2.style.color = "black";
-        msg2.style.fontSize = "20px";
+        msg2.style.fontSize = "3.5vw";
         msg2.style.lineHeight = "1.6";
 
         msg.style.opacity = 0;
@@ -181,7 +181,7 @@ document.addEventListener("mousemove", (e) => {
         msg.style.left = "10%";
         msg.style.top = "40%";
         msg.style.color = "black";
-        msg.style.fontSize = "60px";
+        msg.style.fontSize = "3.5vw";
         msg.style.lineHeight = "1.6";
 
         return;
