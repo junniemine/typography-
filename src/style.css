@@ -211,6 +211,6 @@ body, html {
     line-height: 1.6;
     width: 30vw;       /* 문장 최대 폭 제한 */
     word-break: keep-all;
-    transform: scale(0.8);
+    transform: scale(0.9);
     transform-origin: left top;
 }
