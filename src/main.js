@@ -38,7 +38,7 @@ akTrigger.addEventListener('click', () => {
     msg.style.fontSize = "1.4vw";
     msg.style.lineHeight = "1.6";
     msg.style.color = "white";
-    msg.style.transform = "scale(0.7)";
+    msg.style.transform = "translateY(-50%) scale(0.7)";
 
     inkOverlay.classList.add("active");
     inkOverlay.style.pointerEvents = "none";
