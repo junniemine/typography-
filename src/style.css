@@ -1,0 +1,206 @@
+@import url('//fonts.googleapis.com/earlyaccess/nanummyeongjo.css');
+body, html {
+  overflow: hidden; /* 스크롤을 완전히 제거 */
+    position: fixed; /* 뷰포트에 고정 */
+    width: 100%;
+    height: 100%;
+    inset: 0;
+}
+
+.char {
+    transition: all 0.2s ease-in-out; 
+    cursor: pointer;
+    position: absolute;
+    width: 3.1%;
+    height: auto;
+}
+/* LINE 1 */
+.char:nth-child(1) { top: 8%; left: 32%; }
+.char:nth-child(2) { top: 8%; left: 35%; }
+.char:nth-child(3) { top: 8%; left: 38%; }
+.char:nth-child(4) { top: 8%; left: 44%; }
+.char:nth-child(5) { top: 8%; left: 47%; }
+
+/* LINE 2 */
+.char:nth-child(6) { top: 15%; left: 32%; }
+.char:nth-child(7) { top: 15%; left: 35%; }
+.char:nth-child(8) { top: 15%; left: 38%; }
+.char:nth-child(9) { top: 15%; left: 41%; }
+.char:nth-child(10) { top: 15%; left: 44%; }
+.char:nth-child(11) { top: 15%; left: 50%; }
+.char:nth-child(12) { top: 15%; left: 53%; }
+.char:nth-child(13) { top: 15%; left: 56%; }
+.char:nth-child(14) { top: 15%; left: 59%; }
+.char:nth-child(15) { top: 15%; left: 62%; }
+/*1%씩 다 줄이기 
+/* LINE 3 */
+.char:nth-child(16) { top: 21%; left: 31.8%; }
+.char:nth-child(17) { top: 21%; left: 35%; }
+.char:nth-child(18) { top: 21%; left: 38%; }
+.char:nth-child(19) { top: 21%; left: 44%; }
+.char:nth-child(20) { top: 21%; left: 47%; }
+
+/* LINE 4 */
+.char:nth-child(21) { top: 27%; left: 38%; }
+.char:nth-child(22) { top: 27%; left: 41%; }
+.char:nth-child(23) { top: 27%; left: 44%; }
+.char:nth-child(24) { top: 27%; left: 47%; }
+.char:nth-child(25) { top: 27%; left: 53%; }
+.char:nth-child(26) { top: 27%; left: 56%; }
+.char:nth-child(27) { top: 27%; left: 59%; }
+.char:nth-child(28) { top: 27%; left: 62%; }
+
+/* LINE 5 */
+.char:nth-child(29) { top: 33%; left: 38%; }
+.char:nth-child(30) { top: 33%; left: 41%; }
+.char:nth-child(31) { top: 33%; left: 44%; }
+.char:nth-child(32) { top: 33%; left: 47%; }
+.char:nth-child(33) { top: 33%; left: 53%; }
+.char:nth-child(34) { top: 33%; left: 56%; }
+.char:nth-child(35) { top: 33%; left: 59%; }
+.char:nth-child(36) { top: 33%; left: 62%; }
+
+
+/* LINE 6 */
+.char:nth-child(37) { top: 39%; left: 32%; }
+.char:nth-child(38) { top: 39%; left: 35%; }
+.char:nth-child(39) { top: 39%; left: 38%; }
+.char:nth-child(40) { top: 39%; left: 44%; }
+.char:nth-child(41) { top: 39%; left: 47%; }
+
+/* LINE 7 */
+.char:nth-child(42) { top: 45%; left: 41%; }
+.char:nth-child(43) { top: 45%; left: 44%; }
+.char:nth-child(44) { top: 45%; left: 47%; }
+.char:nth-child(45) { top: 45%; left: 50%; }
+.char:nth-child(46) { top: 45%; left: 53%; }
+
+/* LINE 8 */
+.char:nth-child(47) { top: 51%; left: 47%; }
+.char:nth-child(48) { top: 51%; left: 50%; }
+.char:nth-child(49) { top: 51%; left: 53%; }
+.char:nth-child(50) { top: 51%; left: 59%; }
+.char:nth-child(51) { top: 51%; left: 62%; }
+
+/* LINE 9 */
+.char:nth-child(52) { top: 57%; left: 44%; }
+.char:nth-child(53) { top: 57%; left: 47%; }
+.char:nth-child(54) { top: 57%; left: 53%; }
+.char:nth-child(55) { top: 57%; left: 56%; }
+.char:nth-child(56) { top: 57%; left: 59%; }
+
+/* LINE 10 */
+.char:nth-child(57) { top: 63%; left: 50%; }
+.char:nth-child(58) { top: 63%; left: 53%; }
+.char:nth-child(59) { top: 63%; left: 56%; }
+.char:nth-child(60) { top: 63%; left: 59%; }
+.char:nth-child(61) { top: 63%; left: 62%; }
+
+/* LINE 11 */
+.char:nth-child(62) { top: 69%; left: 53%; }
+.char:nth-child(63) { top: 69%; left: 56%; }
+.char:nth-child(64) { top: 69%; left: 59%; }
+.char:nth-child(65) { top: 69.1%; left: 61.8%; }
+
+/* LINE 12 */
+.char:nth-child(66) { top: 75%; left: 32%; }
+.char:nth-child(67) { top: 75%; left: 35%; }
+.char:nth-child(68) { top: 75%; left: 38%; }
+
+/* LINE 13 */
+.char:nth-child(69) { top: 81%; left: 41%; }
+.char:nth-child(70) { top: 81%; left: 44%; }
+.char:nth-child(71) { top: 81%; left: 47%; }
+.char:nth-child(72) { top: 81%; left: 50%; }
+.char:nth-child(73) { top: 81%; left: 53%; }
+        
+       
+
+.char:hover {
+    transform: scale(1.3);
+    z-index: 100;
+}
+.char.gravity-active:hover {
+    transform: none !important;
+}
+
+#ink-overlay {
+  position: fixed; 
+  /* 초기 크기와 모양을 '악' 글자처럼 작은 원형으로 설정 */
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%; /* 원형으로 만듭니다. */
+  background-color: black;
+  
+  /* Z-index는 -1로 숨겨놓습니다. */
+  z-index: -1; 
+  
+  /* '악' 글자 위치에 오버레이를 놓기 위해 계산된 위치 사용 */
+  /* 제공된 CSS (.char:nth-child(4))를 기반으로 대략적인 위치를 잡습니다. */
+  /* LINE 1의 4번째 글자: top: 8%; left: 45%; */
+  top: 9.2%;   
+  left: 46%; 
+  
+  /* 위치 조정: 자신의 크기만큼 중앙 정렬 */
+  transform: translate(-50%, -50%) scale(0); 
+  
+  /* 애니메이션 효과 (번지는 속도와 부드러움 설정) */
+  transition: transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94), z-index 0s 1.5s; 
+  /* z-index는 transform이 끝난 후 (1.5초 후) 변경되도록 지연시킵니다. */
+}
+
+/* 클릭 시 활성화되는 상태 (번짐) */
+#ink-overlay.active {
+  /* 엄청나게 크게 확대하여 화면 전체를 덮습니다. */
+  transform: translate(-50%, -50%) scale(1000); 
+  z-index: 9999; /* 화면 최상단으로 올립니다. */
+  
+  /* z-index는 transform과 동시에 변경되게 합니다. */
+  transition: transform 8s cubic-bezier(0.25, 0.46, 0.45, 0.94), z-index 0s 0s;
+}
+
+/* (선택 사항) 번짐이 끝난 후 '악' 글자도 사라지게 하려면 opacity 0 */
+#ink-trigger-ak.active-hide {
+    opacity: 0;
+    transition: opacity 10s;
+}
+.char.highlight-white {
+    /* 이미지를 반전(Invert)시켜 검은색을 흰색으로 바꿉니다. */
+    filter: invert(100%);
+    z-index: 10000;
+    cursor: pointer;
+}
+#선.active{
+  filter: invert(100%);
+  z-index: 10000;
+  transition: ease-in-out 0.5s;
+}
+#선1.active{
+  filter: invert(100%);
+  z-index: 10000;
+  transition: ease-in-out 0.5s;
+}
+.char.highlight-white {
+    filter: invert(100%);
+    z-index: 10000; /* 오버레이 위로 올라와 클릭 가능하게 */
+    cursor: pointer;
+    transition: transform 5s cubic-bezier(0.25, 0.46, 0.45, 0.94), z-index 0s 0s;
+}
+#final-message {
+    font-family: 'Nanum Myeongjo';
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    color: white;
+    position: fixed;
+    z-index: -1;   /* 화면에서 완전히 빠지게 */
+    pointer-events: none;
+}
+#final-message2 {
+    opacity: 0;
+    position: fixed;
+    pointer-events: none;
+    z-index: 999999;
+    font-family: 'Nanum Myeongjo';
+    transition: opacity 0.6s ease;
+    color: white;
+}
