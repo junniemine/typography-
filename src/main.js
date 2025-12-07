@@ -34,11 +34,11 @@ akTrigger.addEventListener('click', () => {
     msg.style.zIndex = 99999;
     msg.style.position = "fixed";
     msg.style.left = rect.right + 50 + "px";
-    msg.style.top = '10%';
+    msg.style.top = '40%';
     msg.style.fontSize = "1.4vw";
     msg.style.lineHeight = "1.6";
     msg.style.color = "white";
-    msg.style.transform = "translateY(-50%) scale(0.7)";
+    msg.style.transform = "scale(0.7)";
 
     inkOverlay.classList.add("active");
     inkOverlay.style.pointerEvents = "none";
@@ -162,7 +162,7 @@ document.addEventListener("mousemove", (e) => {
         msg2.style.opacity = 1;
 
         msg2.style.position = "fixed";
-        msg2.style.left = "70%";
+        msg2.style.left = "72%";
         msg2.style.top = "40%";
         msg2.style.color = "black";
         msg2.style.fontSize = "1.4vw";
