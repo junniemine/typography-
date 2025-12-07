@@ -181,7 +181,7 @@ document.addEventListener("mousemove", (e) => {
         msg.style.left = "10%";
         msg.style.top = "40%";
         msg.style.color = "black";
-        msg.style.fontSize = "20px";
+        msg.style.fontSize = "60px";
         msg.style.lineHeight = "1.6";
 
         return;
