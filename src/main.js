@@ -37,7 +37,7 @@ akTrigger.addEventListener('click', () => {
     msg.style.position = "fixed";
     // put the message just to the right of the seon glyph, vertically centered
     msg.style.left = (rect.right + 40) + "px";
-    msg.style.top = '42' + "%"
+    msg.style.top = '40' + "%"
 
     // use viewport-relative font so GitHub deploy and local scale match better
     msg.style.fontSize = "1.6vw";
