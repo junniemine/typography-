@@ -35,7 +35,7 @@ akTrigger.addEventListener('click', () => {
     msg.style.position = "fixed";
     msg.style.left = rect.right + 100 + "px";
     msg.style.top = rect.top + "px";
-    msg.style.fontSize = "60px";
+    msg.style.fontSize = "3.5vw";
     msg.style.lineHeight = "1.6";
     msg.style.color = "white";
 
