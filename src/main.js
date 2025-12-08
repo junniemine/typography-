@@ -37,7 +37,7 @@ akTrigger.addEventListener('click', () => {
     msg.style.position = "fixed";
     // put the message just to the right of the seon glyph, vertically centered
     msg.style.left = (rect.right + 40) + "px";
-    msg.style.top = (seonCenterY -20) + "px";
+    msg.style.top = (seonCenterY -10) + "px";
 
     // use viewport-relative font so GitHub deploy and local scale match better
     msg.style.fontSize = "1.2vw";
@@ -195,7 +195,7 @@ document.addEventListener("mousemove", (e) => {
         msg2.style.opacity = 0;
 
         msg.style.position = "fixed";
-        msg.style.left = '12%';              // move further left (mirroring msg2 offset)
+        msg.style.left = '11%';              // move further left (mirroring msg2 offset)
         msg.style.top = (seonCenterY-40) + "px";  // keep height aligned
         msg.style.color = "black";
         msg.style.fontSize = "1.2vw";          // smaller text
