@@ -126,7 +126,11 @@ document.addEventListener("mousemove", (e) => {
         중력 효과 적용
     ----------------------------- */
     chars.forEach(char => {
-        if (protectedChars.includes(char.id)) {
+        if (
+            char === seonChar1 ||
+            char === seonChar2 ||
+            protectedChars.includes(char.id)
+        ) {
             char.style.transform = "translate(0px, 0px) rotate(0deg) scale(1)";
             return;
         }
