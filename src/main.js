@@ -164,11 +164,7 @@ document.addEventListener("mousemove", (e) => {
             `translate(${moveX}px, ${moveY}px) rotate(${rotate}deg) scale(${scale})`;
     });
 
-    /* -----------------------------
-        메시지 업데이트
-    ----------------------------- */
-
-    // 왼쪽으로 드래그하면 → 오른쪽에 msg2
+  
     if (mouseX < vw * 0.3) {
         const rectSeon = seonChar1.getBoundingClientRect();
         const seonCenterY = rectSeon.top + rectSeon.height / 2;
