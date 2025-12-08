@@ -192,10 +192,10 @@ document.addEventListener("mousemove", (e) => {
         msg2.style.opacity = 0;
 
         msg.style.position = "fixed";
-        msg.style.left = '32%' // keep it to the right of the '선' glyph
-        msg.style.top = seonCenterY + "px";           // align vertically with '선'
+        msg.style.left = '18%';              // move further left (mirroring msg2 offset)
+        msg.style.top = seonCenterY + "px";  // keep height aligned
         msg.style.color = "black";
-        msg.style.fontSize = "1.2vw";
+        msg.style.fontSize = "1vw";          // smaller text
         msg.style.lineHeight = "1.6";
         msg.style.transform = "translateY(-50%) scale(0.8)";
 
