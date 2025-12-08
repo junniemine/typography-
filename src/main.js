@@ -172,9 +172,9 @@ document.addEventListener("mousemove", (e) => {
 
         msg2.style.position = "fixed";
         msg2.style.left = "72%";           // keep at right side
-        msg2.style.top = seonCenterY + "px"; // align vertically with '선'
+        msg2.style.top = (seonCenterY - 40) + "px"; // align vertically with '선'
         msg2.style.color = "black";
-        msg2.style.fontSize = "1.6vw";
+        msg2.style.fontSize = "1.2vw";
         msg2.style.lineHeight = "1.2";
         msg2.style.transform = "translateY(-50%) scale(0.8)";
 
@@ -195,7 +195,7 @@ document.addEventListener("mousemove", (e) => {
         msg.style.left = '18%';              // move further left (mirroring msg2 offset)
         msg.style.top = seonCenterY + "px";  // keep height aligned
         msg.style.color = "black";
-        msg.style.fontSize = "1vw";          // smaller text
+        msg.style.fontSize = "1.2vw";          // smaller text
         msg.style.lineHeight = "1.6";
         msg.style.transform = "translateY(-50%) scale(0.8)";
 
