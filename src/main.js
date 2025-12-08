@@ -40,7 +40,7 @@ akTrigger.addEventListener('click', () => {
     msg.style.top = (seonCenterY - 30) + "px";
 
     // use viewport-relative font so GitHub deploy and local scale match better
-    msg.style.fontSize = "1.6vw";
+    msg.style.fontSize = "1.2vw";
     msg.style.lineHeight = "1.6";
     msg.style.color = "white";
     // translateY(-50%) to vertically center at the top value
@@ -175,7 +175,7 @@ document.addEventListener("mousemove", (e) => {
         msg2.style.top = seonCenterY + "px"; // align vertically with '선'
         msg2.style.color = "black";
         msg2.style.fontSize = "1.6vw";
-        msg2.style.lineHeight = "1.6";
+        msg2.style.lineHeight = "1.2";
         msg2.style.transform = "translateY(-50%) scale(0.8)";
 
         msg.style.opacity = 0;
@@ -192,10 +192,10 @@ document.addEventListener("mousemove", (e) => {
         msg2.style.opacity = 0;
 
         msg.style.position = "fixed";
-        msg.style.left = (rectSeon.right + 40) + "px"; // keep it to the right of the '선' glyph
+        msg.style.left = '32%' // keep it to the right of the '선' glyph
         msg.style.top = seonCenterY + "px";           // align vertically with '선'
         msg.style.color = "black";
-        msg.style.fontSize = "1.6vw";
+        msg.style.fontSize = "1.2vw";
         msg.style.lineHeight = "1.6";
         msg.style.transform = "translateY(-50%) scale(0.8)";
 

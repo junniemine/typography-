@@ -206,7 +206,7 @@ body, html {
 }
 #final-message, #final-message2 {
     font-family: 'Nanum Myeongjo';
-    font-size: 1vw;
+    font-size: 1.2vw;
     line-height: 1.6;
     width: 30vw;       /* 문장 최대 폭 제한 */
     word-break: keep-all;
