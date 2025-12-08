@@ -37,7 +37,7 @@ akTrigger.addEventListener('click', () => {
     msg.style.position = "fixed";
     // put the message just to the right of the seon glyph, vertically centered
     msg.style.left = (rect.right + 40) + "px";
-    msg.style.top = (seonCenterY - 30) + "px";
+    msg.style.top = (seonCenterY + 10) + "px";
 
     // use viewport-relative font so GitHub deploy and local scale match better
     msg.style.fontSize = "1.2vw";
@@ -126,7 +126,10 @@ document.addEventListener("mousemove", (e) => {
         중력 효과 적용
     ----------------------------- */
     chars.forEach(char => {
-        if (protectedChars.includes(char.id)) return;
+        if (protectedChars.includes(char.id)) {
+            char.style.transform = "translate(0px, 0px) rotate(0deg) scale(1)";
+            return;
+        }
 
         const c = char.getBoundingClientRect();
         const cx = c.left + c.width / 2;
@@ -175,7 +178,7 @@ document.addEventListener("mousemove", (e) => {
         msg2.style.top = (seonCenterY - 40) + "px"; // align vertically with '선'
         msg2.style.color = "black";
         msg2.style.fontSize = "1.2vw";
-        msg2.style.lineHeight = "1.2";
+        msg2.style.lineHeight = "1.6";
         msg2.style.transform = "translateY(-50%) scale(0.8)";
 
         msg.style.opacity = 0;
@@ -192,7 +195,7 @@ document.addEventListener("mousemove", (e) => {
         msg2.style.opacity = 0;
 
         msg.style.position = "fixed";
-        msg.style.left = '18%';              // move further left (mirroring msg2 offset)
+        msg.style.left = '12%';              // move further left (mirroring msg2 offset)
         msg.style.top = seonCenterY + "px";  // keep height aligned
         msg.style.color = "black";
         msg.style.fontSize = "1.2vw";          // smaller text
